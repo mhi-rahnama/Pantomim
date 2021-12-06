@@ -1,0 +1,89 @@
+.ArrayList {
+  flex-direction: row;
+  display: flex;
+  height: 200px;
+  width: 400px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.p6,
+.item {
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  color: "#fff";
+  font-size: 18px;
+  border-color: beige;
+  border-width: 10;
+}
+/* .p2 {
+  height: 30px;
+  width: 60px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+} */
+/* .p3 {
+  height: 30px;
+  width: 60px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.p4 {
+  height: 30px;
+  width: 60px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.p5 {
+  height: 30px;
+  width: 60px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.p6 {
+  height: 30px;
+  width: 60px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+} */
+.pStr {
+  font-size: x-large;
+  color: rgb(2, 7, 82);
+  display: flex;
+}
+.p1,
+[toggle="1"] {
+  animation: toggle 100ms linear;
+}
+
+@keyframes toggle {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-5px) rotate(90deg);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(180deg);
+  }
+
+  75% {
+    transform: translateY(-20px) rotate(360deg);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
